@@ -26,6 +26,18 @@
 		<java.version>1.8</java.version>
 		<keycloak.version>3.1.0.Final</keycloak.version>
 	</properties>
+	<distributionManagement>
+    <snapshotRepository>
+        <id>InternalSnapshots</id>
+        <name>Internal Snapshots</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>InternalReleases</id>
+        <name>Internal Releases</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+    </repository>
+</distributionManagement>
 
 	<dependencies>
 		<dependency>
